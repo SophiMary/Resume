@@ -7,9 +7,7 @@
     --pure:#eff2f9;
     --fade: #7081b9;
     --mild: #8997bd;
-    --footer: #212a4a;
     --black: #060b1b;
-    --success: #1ecab8;
     --danger: #f1646c;
     --dark-blue: #28365f;
 }
@@ -69,7 +67,6 @@ nav {
     padding: 0.6rem 1rem;
     border-radius: 4px;
     font-size: 14px;
-    font-style: italic;
 }
 
 .print:hover {
@@ -107,7 +104,6 @@ nav {
     }
 }
 
-
 .image {
     height: 128px;
     width: 128px;
@@ -117,7 +113,7 @@ nav {
 }
 
 .left h2{
-    color: var(--fade);
+    color: var(--pure);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -140,7 +136,6 @@ nav {
 } 
 
 .profile li {
-    color: var(--ternary);
     margin-bottom: .7rem;
     font-size: 14px;
 }
@@ -185,12 +180,6 @@ a {
     border: 1px dotted var(--danger);
 }
 
-@media screen and (max-width: 850px) {
-    .right-section {
-        margin-top: 50px
-    }
-}
-
 @media screen and (min-width: 850px) {
     .expierence .content {
         display: grid;
@@ -201,7 +190,13 @@ a {
     }
 }
 
-.expierence p, .internship p  {
+@media print, screen and (max-width: 850px) {
+    .right-section {
+        margin-top: 80px;
+    }
+}
+
+.expierence p, .internship p {
     font-size: 14px;
     color: var(--ternary);
     line-height: 1.7;
@@ -210,7 +205,6 @@ a {
 p.center {
     color: var(--pure);
 }
-
 
 .item {
     margin-bottom: 2.6rem;
@@ -222,7 +216,7 @@ p.center {
     border-left: 2px dotted var(--dark-blue);
 }
 
- .item:after {
+.item:after {
     content: '';
     position: absolute;
     left: 0;
@@ -254,13 +248,17 @@ p.center {
     margin-bottom: 40px;
 }
 
+.awards {
+    padding: 0 50px 20px;    
+}
+
+.awards p {
+    color: var(--ternary);
+}
+
 @media screen and (min-width: 850px) {
     .internship {
     display: grid;
     grid-template-columns: 1fr 1fr;
     }
-}
-
-.awards {
-    padding: 0 50px 20px;    
 }
