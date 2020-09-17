@@ -85,22 +85,28 @@ nav {
 
 .profile {
     background: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 3rem;
     margin-top: 40px;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 100%);
-    padding-bottom: 3rem;
+    text-align: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 100%);
+    }
+} 
+
+@media screen and (min-width: 700px) {
     .left {
         flex: 2;
         display: flex;
         align-items: center;
     }
 }
+
 
 .image {
     height: 128px;
@@ -122,7 +128,7 @@ nav {
     font-size: 14px;
 }
 
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
     .right {
     flex: 1;
     }
@@ -130,7 +136,7 @@ nav {
 
 .contact, .links {
     list-style-type: none;
-    margin-bottom: 1.6rem;
+    margin: 1.6rem 0;
 } 
 
 .profile li {
@@ -139,7 +145,20 @@ nav {
     font-size: 14px;
 }
 
-.section-heading {
+a {
+    text-decoration: none;
+    color: var(--pure);
+}
+
+.fa {
+    font-size: 20px;
+}
+
+.fa-envelope {
+    font-size: 15px;
+}
+
+.heading, .section-heading {
     font-size: 16px;
     font-weight: 500;
     color: var(--pure);
@@ -148,25 +167,37 @@ nav {
     position: relative;
 }
 
-.section-heading:after {
+.heading:after {
     content: '';
-    width: 60px;
+    width: 70px;
     position: absolute;
     top: 28px;
     left: 0;
     border: 1px dotted var(--danger);
 }
 
-@media only screen and (max-width:854px) {
+.section-heading:after {
+    content: '';
+    width: 45px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1px dotted var(--danger);
+}
+
+@media screen and (max-width: 850px) {
     .right-section {
         margin-top: 50px
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media screen and (min-width: 850px) {
     .expierence .content {
         display: grid;
-        grid-template-columns: 2fr 1fr;   
+        grid-template-columns: 2fr 1fr; 
+    }
+    .right-section {
+        margin-left: 50px;
     }
 }
 
@@ -177,8 +208,9 @@ nav {
 }
 
 p.center {
-    color: var(--fade);
+    color: var(--pure);
 }
+
 
 .item {
     margin-bottom: 2.6rem;
@@ -202,6 +234,12 @@ p.center {
     margin-left: -23px
 }
 
+.roles {
+    margin-left: 20px;
+    list-style-type: circle;
+    color: var(--fade);
+}
+
 .stars {
     font-size: 135%;
     margin-left: 20px;
@@ -216,7 +254,7 @@ p.center {
     margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 850px) {
+@media screen and (min-width: 850px) {
     .internship {
     display: grid;
     grid-template-columns: 1fr 1fr;
