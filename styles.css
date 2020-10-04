@@ -38,7 +38,7 @@ main {
 }
 
 section {
-    padding: 3rem;
+    padding: 3rem 3rem 0;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav {
     padding: 1rem 0;
 }
 
-.inner {
+.inner-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,7 +97,7 @@ nav {
 } 
 
 @media screen and (min-width: 700px) {
-    .left {
+    .profile-left-section {
         flex: 2;
         display: flex;
         align-items: center;
@@ -112,21 +112,21 @@ nav {
     margin-right: 10px;
 }
 
-.left h2{
+.profile-left-section h2{
     color: var(--pure);
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
-.left p {
+.profile-left-section p {
     color: var(--mild);
     font-size: 14px;
 }
 
 @media screen and (min-width: 700px) {
-    .right {
-    flex: 1;
+    .profile-right-section {
+        flex: 1;
     }
 }
 
@@ -153,7 +153,7 @@ a {
     font-size: 15px;
 }
 
-.heading, .section-heading {
+.heading, .section-heading, .section-long-heading {
     font-size: 16px;
     font-weight: 500;
     color: var(--pure);
@@ -180,23 +180,23 @@ a {
     border: 1px dotted var(--danger);
 }
 
-@media screen and (min-width: 850px) {
-    .expierence .content {
+.section-long-heading:after {
+    content: '';
+    width: 220px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1px dotted var(--danger);
+}
+
+@media screen and (min-width: 700px) {
+    .skill-box {
         display: grid;
-        grid-template-columns: 2fr 1fr; 
+        grid-template-columns: 1fr 1fr;
     }
-    .right-section {
-        margin-left: 50px;
-    }
-}
+}    
 
-@media print, screen and (max-width: 850px) {
-    .right-section {
-        margin-top: 80px;
-    }
-}
-
-.expierence p, .internship p {
+.expierence p, .skills p, .internship p{
     font-size: 14px;
     color: var(--ternary);
     line-height: 1.7;
@@ -228,7 +228,7 @@ p.center {
     margin-left: -23px
 }
 
-.roles {
+.points {
     margin-left: 20px;
     list-style-type: circle;
     color: var(--fade);
@@ -240,20 +240,14 @@ p.center {
     
 }
 
-.skills {
+.skill-box {
     margin-left: 20px;
 }
 
-.skill {
-    margin-bottom: 40px;
-}
-
-.awards {
-    padding: 0 50px 20px;    
-}
-
-.awards p {
+.awards p, .projects a, .wanna-work li {
     color: var(--ternary);
+    line-height: 1.7;
+    font-size: 15px
 }
 
 @media screen and (min-width: 850px) {

@@ -13,7 +13,7 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- css -->
@@ -24,7 +24,7 @@
 <body>
     <!-- Print button -->
     <nav>
-        <div class="container inner hidden-print">
+        <div class="container inner-nav hidden-print">
             <div class="resume">Resume</div>
             <div>
                 <!-- <button class="print">Download</button> -->
@@ -35,7 +35,7 @@
 
     <main class="container">
         <section class="profile">
-            <div class="left"> 
+            <div class="profile-left-section"> 
                 <div>
                     <img class="image" src="./IMG_20181119_000754_973.jpg" alt="Sophia">
                 </div>
@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="right">
+            <div class="profile-right-section">
                 <ul class="contact">
                     <li> <a href="tel:+91 8892181354"><i class="fa fa-phone"></i> +91 8892181354</a></li>
                     <li> <a href="mailto:sofy_anthony@outlook.com"><i class="fa fa-envelope"></i> sofy.mary@outlook.com</a></li>
@@ -60,77 +60,99 @@
 
         <!-- Work Expierence -->
         <section class="expierence">
-            <div class="content">
-                <div class="left-section">
-                    <h1 class="heading">Expirence</h1>
-                    <div class="timeline-wrapper">
-                        <div class="item">
-                            <p>2019-09 - 2020-05</p>
-                            <p class="center">Nuchange Informatics, Bangalore</p>
-                            <p class="center">QA Engineer</p>
-                            <ul class="roles">
-                                <li>Perform Smoke, Functional, Regression, Sanity & AD-hoc testing.</li>
-                                <li>Creating Release Notes and User Manuals.</li>
-                                <li>Explore tools to implement in the Process..</li>
-                                <li>Creating and executing the test cases on Qase.</li>
-                                <li>Finding defects and reporting defects on Redmine.</li>
-                                <li>Training & mentoring new team members.</li>
-                            </ul>
-                        </div>
-                        <div class="item">
-                            <p>2018-03 - 2019-07</p>
-                            <p class="center">Pole To Win, Bangalore</p>
-                            <p class="center">Game QA Engineer</p>
-                            <ol class="roles">
-                                <li>Perform Smoke, Functional, Regression, Compatibility, Sanity and AD-hoc testing.</li>
-                                <li>Involved in daily scrum meetings.</li>
-                                <li>Creating and executing the test cases</li>
-                                <li>Reporting defects, creating custom filters and dashboards for bug tracking on JIRA.</li>
-                                <li>Preparing Daily, EOD, Weekly and Vendor reports for clients.</li>
-                                <li>Training and mentoring new team members on testing procedures, product specifications and company policies.</li>
-                            </ol>
-                        </div>
-                        <br />
-                        <div class="item">
-                            <p>2015-10 - 2017-04</p>
-                            <p class="center">IBM, Bangalore</p>
-                            <p class="center">Technical Support Representative</p>
-                        </div>
-                    </div>
+            <h1 class="heading">Expirence</h1>
+            <div class="timeline-wrapper">
+                <div class="item">
+                    <p>2019 - 09 – 2020 - 05</p>
+                    <p class="center">Nuchange Informatics, Bangalore</p>
+                    <p class="center">QA Engineer</p>
+                    <ul class="points">
+                        <li>Automated test cases for the Product using Vanilla JavaScript in Cypress.</li>
+                        <li>Developed web pages for the Product using HTML, CSS and JavaScript.</li>
+                        <li>Gathered requirements from the clients and bridged the gap between clients and the organisation, helping them build systems which solved their business needs.</li>
+                        <li>Provided onsite training for the clients.</li>
+                        <li>Wrote User Manuals and Release Notes for the projects which helped clients walk through our application with ease.</li>
+                        <li>Performed Smoke, Functional, Regression, Sanity & AD-hoc testing to ensure the software meets the specified requirements and quality.</li>
+                        <li>Explored and implemented various open source tools which optimized the process.</li>
+                        <li>Created and executed the test cases on Qase, a test case management tool. Also, reported defects on Redmine, a defect management tool.</li>
+                        <li>Trained and mentored new team members on testing procedures, product specifications and company policies which significantly improved their productivity and reduced the managers work-load.</li>
+                    </ul>
                 </div>
-    
-                <div class="right-section">
-                    <h1 class="section-heading">Skills</h1>
-                    <div class="skill-box">
-                        <div class="skill">
-                            <p class="center">HTML5 & CSS3<p>
-                            <span class="stars">&#9733 &#9733 &#9733 &#9734 &#9734;</span>
-                        </div>
-                        <div class="skill">
-                            <p class="center">JavaScript<p>
-                            <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
-                        </div>
-                        <div class="skill">
-                            <p class="center">React<p>
-                            <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
-                        </div>
-                        <div class="skill">
-                            <p class="center">Mongo DB<p>
-                            <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
-                        </div>  
-                    </div>
-                
+                <div class="item">
+                    <p>2018 - 03 – 2019 - 07</p>
+                    <p class="center">Pole To Win, Bangalore</p>
+                    <p class="center">Game QA Engineer</p>
+                    <ul class="points">
+                        <li>Performed Smoke, Functional, Regression, Compatibility, Sanity and AD-hoc testing on a number of social media instant games to ensure the product meets the specified requirement and quality.</li>
+                        <li>Involved in daily scrum meetings, planning and executing milestones.</li>
+                        <li>Prepared Daily, EOD, Weekly and Vendor reports for clients which helped the clients stay up to date on the status of work.</li>
+                        <li>Created and executed the test cases on TestRail, a test case management tool. Also, reported defects, created custom filters and dashboards for bug tracking on JIRA.</li>
+                        <li>Trained and mentored new team members on testing procedures, product specifications and company policies which significantly improved their productivity and reduced the managers work-load.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <p>2015 - 10 – 2017 - 04</p>
+                    <p class="center">IBM, Bangalore</p>
+                    <p class="center">Technical Support Representative</p>
                 </div>
             </div>
-            
+        </section>  
+
+        <section class="skills">
+            <h1 class="section-heading">Skills</h1>
+            <div class="skill-box">
+                <div class="skills-section1">
+                    <div class="skill">
+                        <p class="center">HTML5 & CSS3<p>
+                        <span class="stars">&#9733 &#9733 &#9733 &#9734 &#9734;</span>
+                    </div>
+                    <div class="skill">
+                        <p class="center">JavaScript<p>
+                        <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
+                    </div>
+                    <div class="skill">
+                        <p class="center">React JS<p>
+                        <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
+                    </div>
+                </div>
+                <div class="skills-section2">
+                    <div class="skill">
+                        <p class="center">Mongo DB<p>
+                        <span class="stars">&#9733 &#9733 &#9734 &#9734 &#9734;</span>
+                    </div> 
+                    <div class="skill">
+                        <p class="center">Node JS<p>
+                        <span class="stars">&#9733 &#9734 &#9734 &#9734 &#9734;</span>
+                    </div> 
+                </div>
+            </div>            
         </section>
 
-        </section class="awards-section">
+        <section class="project-section">
+            <div class="projects">
+                <h1 class="section-heading">Projects</h1>
+                <ul class="points">
+                    <li><a href="https://sophimary.github.io/Rock-Paper-Scissors/">Rock-Paper-Scissors game</a></li>
+                    <li><a href="https://sophimary.github.io/Drum-Kit/">Drum-Kit</a></li>
+                </ul>            
+            </div>
+        </section>
+
+        <section class="awards-section">
             <div class="awards">
                 <h1 class="section-heading">Awards</h1>
                 <p>Received Best Performance award and Client appreciation in the second quarter of 2018, by Pole to Win in Testing.</p>
             </div>
-            
+        </section>
+
+        <section class="wannaWork-section">
+            <div class="wanna-work">
+                <h1 class="section-long-heading">What kind of Job I'm looking for</h1>
+                <ul class="points">
+                    <li>An environment where the work I do matters.</li>
+                    <li>High personal growth rate.</li>
+                </ul>
+            </div>
         </section>
 
         <section class="internship">
@@ -138,7 +160,7 @@
                 <h1 class="heading">Internship</h1>
                 <div class="timeline-wrapper">
                     <div class="item">
-                        <p>2015-02 – 2015-03</p>
+                        <p>2015 - 02 – 2015 - 03</p>
                         <p class="center">Product testing internship at WeChat</p>
                     </div>
                     <br />
@@ -151,14 +173,11 @@
 
             <div class="right-section">
                 <h1 class="heading">Education</h1>
-                <p>2011 - 2015</p>
+                <p>2011 – 2015</p>
                 <p class="center">Sambhram Institute of Technology, Bangalore</p>
                 <p class="center">Bachelor of Engineering</p>
             </div>
         </section>
     </main>
-    
-
-    <script src="app.js"></script>
 </body>
 </html>
