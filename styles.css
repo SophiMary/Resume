@@ -231,20 +231,18 @@ p.center {
 .points {
     margin-left: 20px;
     list-style-type: circle;
-    color: var(--fade);
 }
 
 .stars {
     font-size: 135%;
-    margin-left: 20px;
-    
+    margin-left: 20px; 
 }
 
 .skill-box {
     margin-left: 20px;
 }
 
-.awards p, .projects a, .wanna-work li {
+.awards p, .projects a, .wanna-work li, .points {
     color: var(--ternary);
     line-height: 1.7;
     font-size: 15px
