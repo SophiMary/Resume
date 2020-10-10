@@ -212,6 +212,10 @@ p.center {
     position: relative;
 }
 
+.last-item {
+    margin-bottom:0
+}
+
 .timeline-wrapper {
     border-left: 2px dotted var(--dark-blue);
 }
