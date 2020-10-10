@@ -258,3 +258,12 @@ p.center {
     grid-template-columns: 1fr 1fr;
     }
 }
+
+.internship {
+    margin-bottom: 2.6rem;
+}
+
+.edu {
+    padding-bottom: 2.6rem;
+}
+
