@@ -239,7 +239,7 @@ p.center {
 
 .stars {
     font-size: 135%;
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 .skill-box {
@@ -249,7 +249,12 @@ p.center {
 .awards p, .projects a, .wanna-work li, .points {
     color: var(--ternary);
     line-height: 1.7;
-    font-size: 15px
+    font-size: 18px
+}
+
+.projectInfo {
+    font-size: 15px;
+    margin-left: 15px
 }
 
 @media screen and (min-width: 850px) {
